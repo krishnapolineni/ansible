@@ -1,0 +1,7 @@
+---
+- hosts: app
+  tasks:
+  - name: copying
+    copy:
+     src: /root/1 
+     dest: /root/

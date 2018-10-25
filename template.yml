@@ -1,0 +1,14 @@
+---
+- hosts: web
+  tasks: 
+  - name: using template    
+    template:
+      src: env/dev/templates/web.xml.j2
+      dest: /root/
+      owner: root
+      group: tomcat
+      mode: 0655       
+      backup: yes
+  vars_files:
+   - env/dev/group_vars/web
+

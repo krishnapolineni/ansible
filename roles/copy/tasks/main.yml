@@ -1,0 +1,10 @@
+---
+- name: copying
+  copy:
+    src: /etc/tomcat/server.xml
+    dest: /root/
+    owner: tomcat
+    group: tomcat
+    mode: 0777
+    backup: yes
+  

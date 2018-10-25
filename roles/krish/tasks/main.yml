@@ -1,0 +1,10 @@
+---
+- name: simple echo
+  debug:
+   msg: "Connection check 1 2 3 ..."
+- name: conifg modification
+  template:
+   src: env/{{env}}/templates/web.xml.j2
+   dest: /etc/tomcat/web.xml
+   mode: 0644
+   backup: yes

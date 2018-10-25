@@ -1,0 +1,7 @@
+---
+- hosts: web
+  tasks:
+  - name: synchronize module
+    synchronize:
+      src: /etc/ansible/hosts
+      dest: /root/ 

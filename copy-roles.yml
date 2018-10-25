@@ -1,0 +1,5 @@
+---
+- name: copy module
+  hosts: web 
+  roles:
+  - copy 

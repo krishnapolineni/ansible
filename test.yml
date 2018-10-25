@@ -1,0 +1,7 @@
+---
+- name: using template
+  hosts: "{{host}}"
+  vars_files:
+   - env/{{env}}/group_vars/web
+  roles:
+   - krish
